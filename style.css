@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOP ------------- */
+#top {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 40%;
+}
+
+/* TOP NAV    ----------- */
+
+.flex-container {
+    display: flex;
+    background-color: rgb(173,173,173);
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.flex-container a {
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.flex-container > div {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    font-family: Verdana;
+}
+.flex-container a:hover {
+    text-decoration: underline;
+}
+#smal {
+    font-family: Arial;
+    font-size: small;
+}
+
+/* HEADER  nav dropdown -----------*/
+header {
+    background: rgb(255, 255, 255);
+    height: 130px;
+    box-shadow: 0px 0px 12px 3px rgba(41,41,41,.25);
+}
+.fix-top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-right: 120px;
+}
+li {
+    float: right;
+}
+li img {
+    height: 30px;
+    width: auto;
+    padding: 8px 18px 3px 8px; 
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 3px;
+}
+li a, .dropbtn {
+    display: inline-block;
+    text-decoration: none;
+    color:grey;
+    padding: 20px 20px;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    color: rgb(115,156,198);
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(115,156,198);
+    font-size: small;
+}
+.dropdown-content a:hover {
+    color: rgb(68, 128, 165);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-weight: bold;
+}
+
+/* IMAGE SECTION 1  the big image --------------*/
+section {
+    background-color: rgb(0,149,219);
+    height: 1300px;
+    margin: 0;
+    padding: 0;
+}
+.bigImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(big.jpg);
+    width: 100%;
+    height: 790px;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.cap {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.pinkB a {
+    margin: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(166,19,128);
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    border: 1px solid rgb(166,19,128);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+.underImg {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+.lasmer a {
+    text-decoration: none;
+    background-color: rgb(128,202,237);
+    text-align: center;
+    margin-left: 690px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.lasmer a:hover {
+    background-color: rgb(105, 164, 192);
+}
+
+/* ARTICLE  1 circular  images----------*/
+article {
+   height: 5000px;
+}
+.artImg img {
+    height: 480px;
+    width: 480px;
+    float: right;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: -10px 250px 0 0px;
+}
+.artImg2 {
+    background: rgb(245,245,245);
+    height: 100px;
+    width: auto;
+    margin-top: 220px;
+    margin-bottom: -150PX;
+}
+.artImg2 img {
+    height: 300px;
+    width: 300px;
+    float: left;
+    border: 30px solid white;
+    border-radius: 50%;
+    margin: -220px 0 0 600px;
+}
+article h1 {
+    color: rgb(0,149,219);
+    font-size: 37px;
+    font-weight: bold;
+    margin: 150px 0 0 70px;
+}
+article p {
+    color: rgb(119,119,119);
+    font-size: 22px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 0 30px 50px 70px;
+    line-height: 35px;
+    padding: 0 5px;
+}
+.utforska a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 70px;
+    color: rgb(0,149,219);
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid rgb(0,149,219);
+    border-radius: 5px;
+    font-weight: bold;
+}
+/*ARTIKAL 2 table images ----------*/
+.art2 {
+    background-color: rgb(245,245,245);
+    margin-top: 0;
+    height: 2700px;
+    width: auto;
+}
+table {
+    width: 95%;
+    height: 750px;
+    margin-left: 50px;
+}
+.first-img {
+    background-image: url(elonbild1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.sec-img {
+    background-image: url(hbg-works.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.third-img {
+    background-image: url(hamse_variant_sida.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    border: 8px solid rgb(245,245,245);
+}
+.fourth-img {
+    background-image: url(verr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.fifth-img {
+    background-image: url(Visionsfonden11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.sixth-img {
+    background-image: url(hbg-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.seventh-img {
+    background-image: url(tjejtrappa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.eighth-img {
+    background-image: url(wastecollection-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(245,245,245);
+}
+.text-insid-img p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.skybord {
+    background-image: url(skate_less.jpg);
+    width: 100%;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+.skybord h4 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 100px;
+    text-decoration: none;
+}
+.las-mer-white a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 690px;
+    color: rgb(119,119,119);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.las-mer-white a:hover {
+    border: 7px solid rgb(105, 164, 192);
+}
+
+/*  SECTION 2 --------------*/
+.art3 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    height: 4000px;
+    width: 100%;
+}
+.art3 h2 {
+    color: rgb(0,149,219);
+    font-size: 35px;
+    font-weight: bold;
+    margin: 150px 0 0 70px;
+}
+.artImg3 img {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin: 0px 600px 0 10px;
+
+}
+.artImg4 img {
+    height: 550px;
+    width: 550px;
+    margin: 5px -650px 0 0 ;
+    border-radius: 50%;
+    float: right;
+    padding: 20px;
+}
+.las-mer-text a {
+    color: rgb(0,149,219);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 150px 0 0 70px;
+    text-decoration: none;
+}
+#line-under {
+    height: 5px;
+    width: 35px;
+    background: rgb(0,149,219);
+    margin: 10px 0 50px 70px;
+}
+
+.las-mer-text-right a {
+    color: rgb(0,149,219);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 680px 0 0px;
+    text-decoration: none;
+    float: right;
+}
+#line-under-right {
+    height: 5px;
+    width: 35px;
+    background: rgb(0,149,219);
+    margin: 10px 730px 50px 70px;
+    float: right;
+}
+
+.artImg5 img {
+    height: 300px;
+    width: 300px;
+    margin-left: 610px;
+    margin-top: -30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.artImg6 img {
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: -100px;
+    float: left;
+}
+.artImg7 img {
+    height: 300px;
+    width: 300px;
+    margin-left: 610px;
+    margin-top: -30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.artImg8 img {
+    height: 550px;
+    width: 550px;
+    margin: -150px 120px 0 0 ;
+    border-radius: 50%;
+    float: right;
+    padding: 40px;
+}
+
+.artImg11 img {
+    height: 300px;
+    width: 300px;
+    margin-left: 610px;
+    margin-top: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*  SECTION 3 --------------*/
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    padding: 30px; 
+    margin-top: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.flex-container2 > div {
+    width: 450px;
+    height: 450px;
+    line-height: 450px;
+    margin: 10px 20px;
+}
+
+#image1-in-list {
+    background-image: url(H22_Invanare.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ }
+
+#image2-in-list {
+    background-image: url(H22_Strand.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ }
+#image3-in-list {
+    background-image: url(H22_Alska_Trad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+.flex-container2 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 300px;
+}
+.flex-container2 a:hover {
+    text-decoration: underline;
+    font-size: larger;
+}
+#fo {
+    height: 200px;
+    width: 100%;
+    margin-top: 3200px;
+
+}
+.footer-blue1 {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(76,180,229);
+}
+.footer-blue2 {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(0,149,219);
+}
+
